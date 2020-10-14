@@ -1,0 +1,110 @@
+/*Black page background*/
+body{
+	background-color: #000000;
+}
+/*Margin under nav bar*/
+nav {
+	margin-bottom: 25px;
+	background-color: #000000;
+}
+/*Mav Name (Company Name)*/
+.navbar-brand  {
+	color: #0000ff;
+	font-family: 'Yeseva One', cursive;
+}
+/*Page links in Navigation*/
+.nav-link  {
+	color: #0000ff;
+	font-family: 'Yeseva One', cursive;
+}
+/*Button formattting*/
+.marg {
+	border-radius: 4px;
+	margin-bottom: 25px;
+		height: 75px;
+		width: 150px;
+	float: right;
+	border: 2px solid;
+	background: none;
+	color: #0000ff;
+	transition: border-color .7s, transform .5s;
+}
+/*Button hover*/
+.marg:hover{
+	border-color:white;
+	transform: translateY(-0.25em);
+	cursor: pointer;
+}
+/*Income Statement Label*/
+.incStat {
+	text-align: center;
+	color: #ffffff;
+}
+/*Table info*/
+table {
+	margin: auto;
+	font-family: 'Montserrat', sans-serif;
+	padding-right: 25px;
+}
+/*Heading of table: should say income statement*/
+.thead {
+	text-align: center;
+	font-weight: bold;
+	margin: auto;
+}
+/*table rows*/
+tr {
+	border: 2px solid #000000;
+}
+/*table items*/
+td {
+	padding-left: 35px;
+	border: 2px solid #000000;
+}
+/*Main Catagories Rev*/
+.catar {
+	font-weight: bold;
+	padding-left: 5px;
+	background-color: #28A745;
+		}
+	/*Main Catagory Exp*/
+.catae {
+	font-weight: bold;
+	padding-left: 5px;
+	background-color: #d9534f;
+	}
+/*Subtotals*/
+.subt {
+	padding-left: 50px;
+	background-color: #17A2B8;
+}
+/*Rev Catagories*/
+.revs {
+	background-color: #28A745;
+	}
+/*Minor Catagories: Departmental Expenses; Undistributed; etc*/
+.min-cata {
+	padding-left: 20px;
+	background-color: #d9534f;
+	color: #ffffff;
+}
+/*Expense format in general*/
+.genExp {
+	background-color: #d9534f;
+}
+/*Departmental Expenses*/
+.dept
+/*Undistributed Expenses*/
+.undist
+/*Variable Expenses*/
+.vari
+/*Controllable*/
+.control
+/*Fixed*/
+.fixed
+/*Uncontrollable*/
+.uncontrol
+/*Non cash expense*/
+.nocash
+/*Undistributed Expenses*/
+.undist

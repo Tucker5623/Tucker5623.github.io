@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- Bootstrap Responsive Meta Tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- CSS File -->
+	<link rel="stylesheet" type="text/css" href="Styles/styles.css">
+	<!--Font Awesome-->
+	<script src="https://kit.fontawesome.com/8dac5193de.js" crossorigin="anonymous"></script>
+	<!--Google Fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&family=Yeseva+One&display=swap"
+		rel="stylesheet">
+	<title>Three Wave Set</title>
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg">
+		<a class="navbar-brand" href="#"><i class="fas fa-water"></i> TWS</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<!--First column-->
+			<div class="col-md-3 col-xs-3">
+				<!--Get to income statment level-->
+				<br>
+				<!--Button to show all expenses-->
+				<button class="marg" id="varires">Show All Expenses</button>
+				<!--Button to show all dept expenses-->
+				<button class="marg" id="varidept">Departmental Expenses Only</button>
+				<!--Button to show all undustributed expenses-->
+				<button class="marg" id="variundist">Undistributed Expenses Only</button>
+				<!--Button to show all controllable expenses-->
+				<button class="marg" id="varicont">Controllable Expenses Only</button>
+				<!--Button to show all uncontrollable expenses-->
+				<button class="marg" id="variuncont">Uncontrollable Expenses Only</button>
+				<!--Button to show all variable expenses-->
+				<button class="marg" id="varibut">Variable Expenses Only</button>
+				<!--Button to show all variable expenses-->
+				<button class="marg" id="varifix">Fixed Expenses Only</button>
+
+			</div>
+			<!--Second column-->
+			<div class="col-md-9 col-xs-9">
+
+				<div class="incStat">Income Statement</div>
+				<div>
+					<table>
+						<tr>
+							<td class="catar">Revenue</td>
+						</tr>
+						<tr>
+							<td class="revs">Room Revenue</td>
+						</tr>
+						<tr>
+							<td class="revs">F & B Revenue</td>
+						</tr>
+						<tr>
+							<td class="revs">Other Revenue</td>
+						</tr>
+						<tr>
+							<td class="subt">Total Revenue</td>
+						</tr>
+						<tr>
+							<td class="catae vari control fixed uncontrol nodept noundist ">Expenses</td>
+						</tr>
+						<tr>
+							<td class="min-cata vari noundist control">Departmental Expenses</td>
+						</tr>
+						<tr>
+							<td class="genExp vari noundist dept control">Rooms Dept. Expenses</td>
+						</tr>
+						<tr>
+							<td class="genExp vari noundist dept control">F & B Expenses</td>
+						</tr>
+						<tr>
+							<td class="genExp vari noundist dept control">Other Expenses</td>
+						</tr>
+						<tr>
+							<td class="subt">Departmental Profit/Loss</td>
+						</tr>
+						<tr>
+							<td class="min-cata vari nodept control">Undistributed Expenses</td>
+						</tr>
+						<tr>
+							<td class="genExp vari nodept undist control">Administrative & General</td>
+						</tr>
+						<tr>
+							<td class="genExp vari nodept undist control">Sales & Marketing</td>
+						</tr>
+						<tr>
+							<td class="genExp vari nodept undist control">IT & Telecommunications</td>
+						</tr>
+						<tr>
+							<td class="genExp vari nodept undist control">Property Operations & Maintenence</td>
+						</tr>
+						<tr>
+							<td class="genExp vari nodept undist control">Utilities</td>
+						</tr>
+						<tr>
+							<td class="subt">Gross Operating Profit (GOP)</td>
+						</tr>
+						<tr>
+							<td class="genExp noundist nodept vari uncontrol">Management Fees</td>
+						</tr>
+						<tr>
+							<td class="genExp noundist nodept fixed uncontrol">Rent</td>
+						</tr>
+						<tr>
+							<td class="genExp noundist nodept fixed uncontrol">Property Taxes</td>
+						</tr>
+						<tr>
+							<td class="genExp noundist nodept fixed uncontrol">Insurance</td>
+						</tr>
+						<tr>
+							<td class="subt">Earnings Before Interest Taxes Depreciation, Amortization (EBITDA)</td>
+						</tr>
+						<tr>
+							<td class="genExp noundist nodept nocash fixed uncontrol">Depreciation</td>
+						</tr>
+						<tr>
+							<td class="genExp noundist nodept nocash fixed uncontrol">Amortization</td>
+						</tr>
+						<tr>
+							<td class="genExp noundist nodept fixed uncontrol">Interest Expenses</td>
+						</tr>
+						<tr>
+							<td class="genExp noundist nodept fixed uncontrol">Income Taxes</td>
+						</tr>
+						<tr>
+							<td class="subt">Net Income/Loss</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js"
+		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="Javascript/javascript.js"></script>
+</body>
+
+</html>
